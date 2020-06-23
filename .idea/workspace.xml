@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="73c9bf3b-0811-4000-aca0-c83be608826e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1djmnE8im3ekSTinZ8LI6ydRiQf" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="73c9bf3b-0811-4000-aca0-c83be608826e" name="Default Changelist" comment="" />
+      <created>1592947047592</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592947047592</updated>
+      <workItem from="1592947070913" duration="733000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="137" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592947382629">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="137" y="54" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.30.1366.738@0.30.1366.738" timestamp="1592947382629" />
+    <state x="462" y="140" key="FileChooserDialogImpl" timestamp="1592947832220">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="462" y="140" key="FileChooserDialogImpl/0.30.1366.738@0.30.1366.738" timestamp="1592947832220" />
+    <state x="65" y="30" key="new project wizard" timestamp="1592947838988">
+      <screen x="0" y="30" width="1366" height="738" />
+    </state>
+    <state x="65" y="30" key="new project wizard/0.30.1366.738@0.30.1366.738" timestamp="1592947838988" />
+  </component>
+</project>
