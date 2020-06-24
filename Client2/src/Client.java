@@ -33,7 +33,7 @@ public class Client {
             //keep reading until stop is input
             while (!msgout.equals("stop")) {
                 try {
-                    //sending message
+                    //sending messages
                     msgout = out.readLine();
                     output.writeUTF(msgout);
                     output.flush();
