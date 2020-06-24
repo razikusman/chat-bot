@@ -42,11 +42,6 @@ public class Client {
                     msgin = input.readUTF();
                     System.out.println(msgin);
 
-                    //sending message
-                    msgout = out.readLine();
-                    output.writeUTF(msgout);
-                    output.flush();
-
                 } catch (IOException i) {
                     System.out.println(i);
                 }

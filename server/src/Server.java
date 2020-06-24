@@ -15,7 +15,6 @@ public class Server {
 
     //constructor with post
     public Server( int port){
-
         //start server and waits for a connection
         try {
             server = new ServerSocket((port));
@@ -36,7 +35,7 @@ public class Server {
 
             //take input from client2 socket
             input2 = new DataInputStream(socket2.getInputStream()//data input stream
-                   // new BufferedInputStream(socket2.getInputStream())
+                    // new BufferedInputStream(socket2.getInputStream())
             );
 
             //create a output stream
@@ -50,43 +49,34 @@ public class Server {
             String msgin2 = "";
 
             //read mesage from client until stop is sent
-            while (!(msgin1.equals("stop") )){
+            while (!(msgin1.equals("stop"))) {
                 try {
-                    //recieving message
+                    //recieving message && sending message
                     msgin1 = input1.readUTF();
-                    if (msgin1!="") {
-                        System.out.println(msgin1 + "==> from client1");
-                        output2.writeUTF(msgin1);
-                        output2.flush();
-                    }
+                    System.out.println(msgin1 + "==> from client1");
+                    output2.writeUTF(msgin1);
+                    output2.flush();
 
 
-
-                        //recieving message
+                    //recieving message && sending message
                     msgin2 = input2.readUTF();
-                    if (msgin2!="") {
-                        System.out.println(msgin2 + "==>from client2");
-                        output1.writeUTF(msgin2);
-                        output1.flush();
-                    }
-
-                }
-                catch (IOException i){
+                    System.out.println(msgin2 + "==>from client2");
+                    output1.writeUTF(msgin2);
+                    output1.flush();
+                } catch (IOException i) {
                     System.out.println(i);
                 }
 
             }
-            System.out.println("closing connection");
-
             //close connection
             socket1.close();
             socket2.close();
             input1.close();
             input2.close();
-        }
-        catch (IOException i){
+        }catch (IOException i){
             System.out.println(i);
         }
+        System.out.println("closing connection");
     }
 
     public static void main(String[] args) {
@@ -95,42 +85,3 @@ public class Server {
 
 
 }
-/*
-* //establishing a connection
-        try {
-            socket = new Socket(address , port);
-            System.out.println("connected");
-
-            //take input from terminal
-            input = new DataInputStream(System.in);
-
-            //sends output to the socket
-            out = new DataOutputStream(socket.getOutputStream());
-        } catch (UnknownHostException u) {
-            System.out.println(u);
-        } catch (IOException e) {
-            System.out.println(e);
-        }
-        //variable to read the message from input
-        String msgin = "";
-        String msgout = "";
-
-        //keep reading until stop is input
-        while(!msgout.equals("stop")){
-            try {
-                msgout = input.readLine();
-                out.writeUTF(msgout);
-            } catch (IOException i) {
-                System.out.println(i);
-            }
-        }
-
-        //close the connection
-        try {
-            input.close();
-            out.close();
-            socket.close();
-        }
-        catch (IOException i) {
-            System.out.println(i);
-        }*/
